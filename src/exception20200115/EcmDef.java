@@ -12,8 +12,9 @@ import org.junit.Test;
  * @date 2020/1/15 20:10
  */
 public class EcmDef {
-
+static  int n=9;
     public static void main(String[] args) {
+        EcDef ec=new EcDef();
         String str="1";
         System.out.println(Integer.parseInt(str));
         try {
