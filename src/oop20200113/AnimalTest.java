@@ -66,7 +66,7 @@ package oop20200113;
          *     强制类型转换，（向下转型）将父类引用指向的对象转为为子类类型
          *     可能会出现ClassCastException异常，
          *     解决方法：Instanceof
-         *     a instanceof A:判断对象a是否是A的实例,如果true就向下转型
+         *     a instanceof A:判断对象a是否是A/A的子类的实例,如果true就向下转型
          *     如果 a instanceof A:为true，a instanceof B也为true，则B是A的父类
          *
          *   虚拟方法：在多态的情况下，父类的方法称为虚拟方法，父类根据赋给它的不同子类对象，
@@ -114,6 +114,7 @@ public class AnimalTest {
          */
         System.out.println();
         Animal cat=new Cat();
+        cat.name="hh";
         //如何才能调用子类特有的属性和方法，
         // 使用强制类型转化符，向下转型。将父类引用指向的对象转为子类的引用对象
         Cat cat1=(Cat)cat;
@@ -129,7 +130,7 @@ public class AnimalTest {
         AnimalTest animalTest=new AnimalTest();
         animalTest.func(cat);
         animalTest.func(new Dog());
-        animalTest.func();
+        animalTest.func(new Animal());
         cat.setLegs(4);
     }
 
@@ -143,7 +144,7 @@ public class AnimalTest {
     }
 }
 class Animal{
-    String name;
+    static  String name;
     int age;
     private int legs;
 

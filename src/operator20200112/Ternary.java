@@ -1,4 +1,4 @@
-package operator;
+package operator20200112;
 
 /**
  * 三目运算符

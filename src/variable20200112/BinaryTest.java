@@ -1,6 +1,4 @@
-package variable;
-
-import org.junit.Test;
+package variable20200112;
 
 /**
  * 计算机中不同进制的使用说明

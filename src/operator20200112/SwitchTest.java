@@ -1,4 +1,4 @@
-package operator;
+package operator20200112;
 
 /**
  * switch-case
@@ -10,8 +10,8 @@ package operator;
  *   ｝
  * 2，说明：
  * （1）根据switch表达式的值，依次匹配各个case中的常量，
- *      一旦匹配成功，则进入相应case结构中，迪欧爱用其语句
- *      当调用玩执行语句以后，则仍然继续向下执行其他case结构中的执行语句，
+ *      一旦匹配成功，则进入相应case结构中，执行其语句
+ *      当调用完执行语句以后，则仍然继续向下执行其他case结构中的执行语句，
  *     直到遇到break关键字或此switch结构末尾结束
  * （2）switch结构中的表达式，只能是如下的6中数据类型之一：
  *      byte\short\char\int\枚举类型（JDK5.0）\String类型（JDK7.0）

@@ -1,4 +1,4 @@
-package test;
+package test20200112;
 
 /**
  * 100以内质数输出的实现 一

@@ -38,6 +38,7 @@ class Bank{
    // private static Bank instance=new Bank();
     //3.提供静态公共的方法，返回类的对象
     public static Bank getInstance(){
+
         return instance;
     }
 

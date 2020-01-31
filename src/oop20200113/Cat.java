@@ -11,10 +11,10 @@ public class Cat extends Animal {
         System.out.println("喵喵走路");
     }
 
-    @Override
-    public void eat() {
-        System.out.println("喵喵吃鱼");
-    }
+    //@Override
+  //  public void eat() {
+    //    System.out.println("喵喵吃鱼");
+  //  }
 
     public void shout(){
         System.out.println("喵喵叫");

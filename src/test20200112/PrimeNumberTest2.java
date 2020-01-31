@@ -1,4 +1,4 @@
-package test;
+package test20200112;
 
 /**100以内质数的输出优化
  * @author zhaomin
