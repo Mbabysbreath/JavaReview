@@ -11,7 +11,7 @@ class Window3 implements Runnable {
     /*只创造了一个Window1对象,因此可以实现100张票共享*/
     private int ticket=100;
     @Override
-    public synchronized void run() {
+    public  void run() {
         while(true){
                 show();
             }

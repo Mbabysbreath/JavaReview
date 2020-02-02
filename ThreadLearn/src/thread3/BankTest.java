@@ -16,6 +16,7 @@ class Bank{
     }
     private static Bank instance=null;
 //方式一：效率较差---同步代码块直接加一个synchronized
+    //public static synchronized  Bank getInstance(){
     public static  Bank getInstance(){
         //方式二：效率更高---同步代码块前加一个判断条件，如果不满足就不要再等了
         if(instance==null){

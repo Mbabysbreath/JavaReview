@@ -41,7 +41,6 @@ public class AbstractTest {
     }
      abstract void eat();
 
-
     public void walk(){
         System.out.println("人走路");
     }
