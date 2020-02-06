@@ -27,33 +27,7 @@ package thread6;
  * @author zhaomin
  * @date 2020/1/29 20:00
  */
-class Number implements Runnable{
-    private int number=1;
-    private Object obj=new Object();
-    @Override
-    public void run() {
-        while(true){
-           // synchronized (this) {
-              synchronized (obj) {//调用notify的对象和同步监视器obj不是同一个对象，会出现异常
-                                  //加上obj.wait(),obj.notify()就对了
-                obj.notify();
-                if(number<=100){
-                    System.out.println(Thread.currentThread().getName()+":"+number);
-                    number++;
 
-                    try {
-                        //使得调用如下wait()方法的线程进入阻塞状态
-                        obj.wait();
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }else{
-                    break;
-                }
-            }
-        }
-    }
-}
 public class CommunicationTest {
     public static void main(String[] args) {
         Number number=new Number();
@@ -63,5 +37,33 @@ public class CommunicationTest {
         t2.setName("线程2");
         t1.start();
         t2.start();
+    }
+}
+class Number implements Runnable{
+    private int number=1;
+    private Object obj=new Object();
+    @Override
+    public void run() {
+        while(true){
+           // synchronized (this){
+            synchronized (obj){//调用notify的对象要和同步监视器是同一个对象，否则会抛异常
+                               //加上obj.wait(),obj.notify,obj.notifyAll()
+               // notify();
+               obj.notify();
+                if(number<=100){
+                    System.out.println(Thread.currentThread().getName() + ":" + number);
+                    number++;
+                    try {
+                        //使得调用如下wait()方法的线程进入阻塞状态
+                       // wait();
+                       obj.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }else{
+                    break;
+                }
+            }
+        }
     }
 }

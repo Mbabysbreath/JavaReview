@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ClassInCommon/ClassInCommon.iml" filepath="$PROJECT_DIR$/ClassInCommon/ClassInCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CollectionLearn/CollectionLearn1.iml" filepath="$PROJECT_DIR$/CollectionLearn/CollectionLearn1.iml" />
       <module fileurl="file://$PROJECT_DIR$/FamilyAccount/FamilyAccount.iml" filepath="$PROJECT_DIR$/FamilyAccount/FamilyAccount.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaReview.iml" filepath="$PROJECT_DIR$/JavaReview.iml" />
       <module fileurl="file://$PROJECT_DIR$/ThreadLearn/ThreadLearn.iml" filepath="$PROJECT_DIR$/ThreadLearn/ThreadLearn.iml" />
