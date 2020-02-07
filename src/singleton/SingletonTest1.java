@@ -34,8 +34,8 @@ class Bank{
 
     }
     //2.内部创建类的对象，为私有静态的
-    public static Bank instance=new Bank();
-   // private static Bank instance=new Bank();
+    //public static Bank instance=new Bank();
+    private static Bank instance=new Bank();
     //3.提供静态公共的方法，返回类的对象
     public static Bank getInstance(){
 
