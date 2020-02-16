@@ -88,7 +88,7 @@ public class BufferedTest {
             /*第二种String:readLine()一次读取一行，默认不读取换行*/
             String data;
             while ((data = bfr.readLine()) != null) {
-               // 第一种方法：readLine()不加换行
+               // 第一种 方法：readLine()不加换行
                 //bwr.write(data);
                 //第二种：手动加换行
                 //bwr.write(data+'\n');
@@ -170,4 +170,15 @@ public class BufferedTest {
         long end=System.currentTimeMillis();
         System.out.println("复制操作花费时间："+(end-start));
     }
+    @Test
+    public void test(){
+        int m=2;
+        int n=3;
+        m=n^m;
+        n=m^n;
+        m=m^n;
+        System.out.println(m);
+        System.out.println(n);
+    }
+
 }
