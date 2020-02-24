@@ -25,7 +25,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "reflection1.Person{" +
+        return "reflection1.Person1{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';

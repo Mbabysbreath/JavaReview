@@ -77,7 +77,9 @@ public class CompareTest {
                 throw new RuntimeException("输入的类型不一致");
             }
         });
+
         System.out.println(Arrays.toString(arr));
+
     }
 
     @Test
@@ -104,6 +106,7 @@ public class CompareTest {
                 throw new RuntimeException("输入类型不一致");
             }
         });
+
         System.out.println(Arrays.toString(arr));
     }
 

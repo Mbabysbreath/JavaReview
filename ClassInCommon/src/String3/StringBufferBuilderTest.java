@@ -27,9 +27,12 @@ public class StringBufferBuilderTest {
      * 问题1：sout(sb2.length());//返回的是数组中实际存储的长度，不是真实长度
      * 问题2：扩容问题：如果要添加的数据底层数组盛不下了，就需要扩容底层的数组
      *       默认情况下，扩容为原来容量的2倍+2，同时将原有的数组元素复制到新的数组中
-     * 指导意义：在实际开发中要尽量避免扩容，因为还要进行数组复制，
-     *         所以建议使用StringBuffer(int capacity)或StringBuilder(int capacity)的构造器，提前指定容量，提高效率
+     *
+     * 指导意义：在实际开发中要尽量避免扩容，因为还要进行数组复制
+     *         所以建议使用StringBuffer(int capacity)或StringBuilder(int capacity)的构造器，
+     *         提前指定容量，提高效率
      * */
+
     @Test
     public void test1(){
         StringBuffer sb1 = new StringBuffer("abc");
@@ -39,12 +42,12 @@ public class StringBufferBuilderTest {
     }
 
     /**
-     * StringBuffer append(xxx):提供了很多的append()方法，用于进行字符串的拼接,可扩容
-     * StringBuffer delete(int start,int end);删除指定位置的内容
-     * StringBuffer replace(int start,int end,String str);把[start,end)位置替换为str可扩容
+     *StringBuffer append(xxx):提供了很多的append()方法，用于进行字符串的拼接,可扩容
+     *StringBuffer delete(int start,int end);删除指定位置的内容
+     *StringBuffer replace(int start,int end,String str);把[start,end)位置替换为str可扩容
      *StringBuffer insert(int offset,xxx):在指定位置插入xxx
      *StringBuffer reverse();把当前字符序列逆转
-
+     *
      *public int indexOf(String str)
      *
      *返回一个从start开始到end索引结束的左闭右开区间的子字符串
@@ -52,6 +55,7 @@ public class StringBufferBuilderTest {
      *public int length()
      *public char charAt(int n)
      *public void setCharAt(int n,char ch)//将指定位置的字符改为ch
+     *
      *
      * 总结：
      * 增：append(xxx)

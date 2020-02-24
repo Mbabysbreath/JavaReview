@@ -115,4 +115,16 @@ public class StringTest {
         String s5=s4+"hadoop";
         System.out.println(s1==s5);//true
     }
+
+    public static int num(int[] arr, int k) {
+        int count=0;
+        for(int i=0;i<arr.length;i++) {
+            for(int j=i+1;j<arr.length;j++) {
+                if (arr[i] + arr[j] == k) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
 }

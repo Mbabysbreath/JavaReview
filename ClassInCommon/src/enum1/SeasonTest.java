@@ -43,8 +43,8 @@ class Season{
     public String getSeasonDesc() {
         return seasonDesc;
     }
-    //5.其他诉求2：提供toString()
 
+    //5.其他诉求2：提供toString(
     @Override
     public String toString() {
         return "Season{" +
