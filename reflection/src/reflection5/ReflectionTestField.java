@@ -1,7 +1,6 @@
 package reflection5;
 
 import org.junit.Test;
-import reflection1.Person;
 import reflection3.Person1;
 
 import java.lang.reflect.Field;

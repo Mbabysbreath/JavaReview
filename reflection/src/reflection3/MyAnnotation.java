@@ -9,6 +9,7 @@ import static java.lang.annotation.ElementType.CONSTRUCTOR;
 import static java.lang.annotation.ElementType.LOCAL_VARIABLE;
 
 /**
+ * 注解
  * @author zhaomin
  * @date 2020/2/21 23:45
  */

@@ -10,6 +10,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
 /**
+ * 获取当前运行时类的方法
  * @author zhaomin
  * @date 2020/2/22 22:59
  */

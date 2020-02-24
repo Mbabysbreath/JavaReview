@@ -10,6 +10,7 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
 /**
+ * 获取当前运行时类的其他结构
  * @author zhaomin
  * @date 2020/2/22 23:48
  */

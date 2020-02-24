@@ -15,6 +15,7 @@ public class NewInstanceTest  {
         Class<Person> clazz = Person.class;
 
         /**
+         * 最常用的方法
          * newInstance():调用此方法，创建对应的运行时类的对象。内部调用运行时类的空参构造器
          *
          * 要想此方法正常的创建运行时类的对象，要求：

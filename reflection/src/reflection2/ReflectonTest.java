@@ -6,6 +6,7 @@ import reflection1.Person;
 import java.lang.annotation.ElementType;
 
 /**
+ * 获取Class类实例的方式
  * @author zhaomin
  * @date 2020/2/19 15:25
  */
