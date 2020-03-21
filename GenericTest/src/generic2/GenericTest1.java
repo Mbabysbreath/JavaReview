@@ -2,7 +2,6 @@ package generic2;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**

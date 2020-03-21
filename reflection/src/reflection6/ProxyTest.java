@@ -3,6 +3,7 @@ package reflection6;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.ArrayList;
 
 /**
  * 反射的应用：动态代理的举例

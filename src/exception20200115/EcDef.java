@@ -2,7 +2,7 @@ package exception20200115;
 
 /**
  * 自定义异常
- * 1.继承现有的异常体系结构RuntimeEsception,Exception
+ * 1.继承现有的异常体系结构RuntimeException,Exception
  * 2.提供序列版本号
  * 3.提供重载的构造器
  * @author zhaomin

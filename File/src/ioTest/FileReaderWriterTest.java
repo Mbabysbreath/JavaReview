@@ -29,6 +29,7 @@ public class FileReaderWriterTest {
             System.out.print((char) data);
             data=fr.read();
         }
+
         int i=65;
         char c=(char)i;
         System.out.println(9);

@@ -47,10 +47,11 @@ public class GenericTest {
     public void test1(){
         List<Object> list1=null;
         List<String> list2=null;
-
+        List<Student> list4=null;
         List<?> list=null;
         list=list1;
         list=list2;
+        list=list4;
 
        //编译不通过，空指针引用
        // print(list1);

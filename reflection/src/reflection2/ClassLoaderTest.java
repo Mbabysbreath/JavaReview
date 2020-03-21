@@ -44,7 +44,7 @@ public class ClassLoaderTest {
 //        String password = p.getProperty("password");
 //        System.out.println(password);
 
-        //方式二：用类加载器读取
+        //方式二：用类加载器读取，当前模块的src下
         ClassLoader classLoader = ClassLoaderTest.class.getClassLoader();
         InputStream is1 = classLoader.getResourceAsStream("jdbc1.properties");
         p.load(is1);

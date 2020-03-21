@@ -139,4 +139,13 @@ public class ListTest {
             System.out.println(list.get(i));
         }
     }
+    @Test
+    public void test3(){
+        List<String> list=new ArrayList<>();
+        list.add("abc");
+        list.add("cde");
+        list.add("tyi");
+        String[] str=list.toArray(new String[0]);
+        System.out.println(Arrays.toString(str));
+    }
 }

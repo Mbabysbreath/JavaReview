@@ -21,6 +21,8 @@ import java.util.*;
  *
  * 4.泛型在继承方面的体现
  *
+ * 5.通配符
+ *
  * @author zhaomin
  * @date 2020/2/10 17:32
  */

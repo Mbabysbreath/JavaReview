@@ -63,6 +63,8 @@ public class CollectionTest {
         coll.add(123);
         coll.add("abc");
         coll.add(new String("sdf"));
+        coll.add(new Person("Z",11));
+        coll.add(122);
         Person p=new Person("ZhaoMin",20);
         coll.add(p);
         coll.add(new Person("WangYiBo",22));
@@ -153,5 +155,27 @@ public class CollectionTest {
         System.out.println(list3);
         //iterator():返回Iterator接口的实例，用于遍历集合元素，放在IteratorTest.java中
 
+    }
+    @Test
+    public void test5(){
+        System.out.println(isExists("abc","ac"));
+    }
+    private boolean isExists(String s1,String s2){
+        char[] arr1=s1.toCharArray();
+        Character[] a = new Character[arr1.length];
+        for(int i=0;i<arr1.length;i++){
+            a[i]=arr1[i];
+        }
+        char[] arr2=s2.toCharArray();
+        Character[] a2 = new Character[arr2.length];
+        for(int i=0;i<arr2.length;i++){
+            a2[i]=arr2[i];
+        }
+        List<Character> list1=Arrays.asList(a);
+        List<Character> list2=Arrays.asList(a2);
+        if(list1.containsAll(list2)){
+            return true;
+        }
+        return false;
     }
 }

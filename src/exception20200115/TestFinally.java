@@ -9,12 +9,13 @@ public class TestFinally {
         try {
             int a=-1;
             int b=0;
-          //  System.out.println(a/b);
+           // System.out.println(a/b);
             System.out.println("jiji");
             if(a<0||b<0){
                 throw new EcDef("分子或分母为负数");
             }
-
+               return ;
+           // System.out.println("00");
         } catch(ArithmeticException e){
           //  e.getMessage();
             System.out.println("除0异常");
@@ -23,7 +24,9 @@ public class TestFinally {
             System.out.println(e.getMessage());
         }finally {
             System.out.println("结束啦");
+            return;
         }
+        //System.out.println("+++++++++");
 
     }
 }
