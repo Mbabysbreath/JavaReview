@@ -40,7 +40,7 @@ public class Jdbc1 {
                System.out.println(connection);
                //3.获取可以执行sql语句的对象Statement
                statement=connection.createStatement();
-               //4.获取结果集
+               //4.获 取结果集
                String sql="SELECT * FROM jobs";
                resultSet=statement.executeQuery(sql);
                //5.处理结果集
