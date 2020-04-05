@@ -27,12 +27,13 @@ public class ObjectStreamTest {
     public void test(){
         ObjectOutputStream oos = null;
         try {
-            File file = new File("object.dat");
+            File file = new File("object.txt");
             FileOutputStream fos = new FileOutputStream(file);
             oos = new ObjectOutputStream(fos);
 
             oos.writeObject(new String("王一博&照敏"));
-            oos.writeObject(new Person("王一博",22));
+            oos.writeObject(new Person("王一博",22,1));
+            System.out.println("对象序列化成功");
             oos.flush();//刷新
         } catch (IOException e) {
             e.printStackTrace();
@@ -55,7 +56,7 @@ public class ObjectStreamTest {
     public void test1(){
         ObjectInputStream ois = null;
         try {
-            ois = new ObjectInputStream(new FileInputStream("object.dat"));
+            ois = new ObjectInputStream(new FileInputStream("object.txt"));
 
             Object obj = ois.readObject();
             String str=(String)obj;

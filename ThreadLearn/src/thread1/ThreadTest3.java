@@ -18,9 +18,11 @@ package thread1;
  * @date 2020/1/23 23:02
  */
 class MyRunnable implements Runnable{
+    int i;
     @Override
     public void run() {
-        for(int i=0;i<50;i++){
+
+        for(i=0;i<50;i++){
             if(i%2==0){
                 System.out.println(Thread.currentThread().getName()+"-->"+i);
             }

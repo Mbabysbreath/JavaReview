@@ -58,6 +58,9 @@ public class FileTest4 {
             System.out.println("shibai");
         }
     }
-
+@Test
+    public void test3(){
+    System.getProperties().list(System.out);
+}
 
 }

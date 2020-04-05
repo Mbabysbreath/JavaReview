@@ -22,22 +22,30 @@ package thread1;
 class MyThread extends Thread{
     @Override
     public void run() {
+        Thread.yield();
+
         for (int i = 0; i < 100; i++) {
-            if (i % 2 == 0) {
+
                 System.out.println(Thread.currentThread().getName());
-                System.out.print(i + " ");
-            }
+//                System.out.print(i + "-- ");
+
+
         }
     }
 }
 public class ThreadTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        System.out.println("==============");
         MyThread t1=new MyThread();
+        MyThread t2=new MyThread();
+        t1.start();
+        t2.start();
+
+        //t1.run();
        // t1.start();
-        t1.run();
-       // t1.start();
-        for(int i=0;i<10;i++) {
-            System.out.println("hello");
-        }
+//        for(int i=0;i<10;i++) {
+//            System.out.println("hello----1");
+//        }
+        //Thread.yield();
     }
 }

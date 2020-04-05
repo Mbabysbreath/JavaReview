@@ -11,7 +11,7 @@ package thread2;
  * （5）setName(String name)--------设置当前线程的名字
  *                         ①Thread.currentThread.setName(String name);
  *                        ②Thread(String name)--利用有参构造器直接传入参数
- * （6）yield()------------释放当前CPU的执行权
+ * （6）yield()------------释放当前CPU的执行权,但当前线程仍然可能又会获取到
  * (7)join()--------------在线程a中调用线程b的join()方法，线程a会进入阻塞状态，
  *                        直到等待线程b执行往后，a才结束阻塞状态。
  *（8）sleep(long milltime)-静态方法--让当前线程“睡眠”指定的milltimes毫秒，
