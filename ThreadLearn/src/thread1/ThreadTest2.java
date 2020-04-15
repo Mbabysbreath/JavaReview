@@ -14,5 +14,6 @@ public class ThreadTest2 {
                 System.out.println();
             }
         }.start();
+        Thread.currentThread().getState();
     }
 }
